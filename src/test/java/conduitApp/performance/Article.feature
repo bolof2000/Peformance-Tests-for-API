@@ -18,7 +18,15 @@ Feature: create article
     And request {"article": {"tagList": [],"title": "Article creation","description": "test creation is here to stay","body": "creatre aricle content"}}
     When method Post
     Then status 200
-    And match response.article.title == 'Article creation'
+
+  Scenario: get all tags
+
+    Given url 'https://conduit.productionready.io/api/articles?limit=10&offset=0'
+    When  method get
+    Then status 200
+
+
+
 
 
 
