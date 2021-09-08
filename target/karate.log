@@ -1,0 +1,599 @@
+21:22:50.933 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:22:51.586 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+21:22:51.586 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+21:22:51.789 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://jsonplaceholder.typicode.com/users
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:22:51.789 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST https://jsonplaceholder.typicode.com/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 160
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Test User","username":"testuser","email":"test@user.com","address":{"street":"Has No Name","suite":"Apt. 123","city":"Electri","zipcode":"54321-6789"}}
+
+21:22:52.173 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 383
+1 < 200
+1 < Date: Wed, 08 Sep 2021 03:22:52 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < x-ratelimit-limit: 1000
+1 < x-ratelimit-remaining: 999
+1 < x-ratelimit-reset: 1630644906
+1 < vary: Origin, Accept-Encoding
+1 < access-control-allow-credentials: true
+1 < cache-control: max-age=43200
+1 < pragma: no-cache
+1 < expires: -1
+1 < x-content-type-options: nosniff
+1 < etag: W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"
+1 < via: 1.1 vegur
+1 < CF-Cache-Status: HIT
+1 < Age: 23213
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=8tbhc1RnPdc59eypJ1zHgtseaB7L4lFTEwc857JOl45VEhiXXJt5uD2uPhBdI03syDFG24CzNaudsvx6KEqY1RAHpPQ6D35phNZAz%2FHs7ZESLHmE3i6YHQ%2BhW3Qc%2FOabG7Uvn6G1mDgTVa1%2FSYcy"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 68b50e0caf6f677e-DFW
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+[
+  {
+    "id": 1,
+    "name": "Leanne Graham",
+    "username": "Bret",
+    "email": "Sincere@april.biz",
+    "address": {
+      "street": "Kulas Light",
+      "suite": "Apt. 556",
+      "city": "Gwenborough",
+      "zipcode": "92998-3874",
+      "geo": {
+        "lat": "-37.3159",
+        "lng": "81.1496"
+      }
+    },
+    "phone": "1-770-736-8031 x56442",
+    "website": "hildegard.org",
+    "company": {
+      "name": "Romaguera-Crona",
+      "catchPhrase": "Multi-layered client-server neural-net",
+      "bs": "harness real-time e-markets"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Ervin Howell",
+    "username": "Antonette",
+    "email": "Shanna@melissa.tv",
+    "address": {
+      "street": "Victor Plains",
+      "suite": "Suite 879",
+      "city": "Wisokyburgh",
+      "zipcode": "90566-7771",
+      "geo": {
+        "lat": "-43.9509",
+        "lng": "-34.4618"
+      }
+    },
+    "phone": "010-692-6593 x09125",
+    "website": "anastasia.net",
+    "company": {
+      "name": "Deckow-Crist",
+      "catchPhrase": "Proactive didactic contingency",
+      "bs": "synergize scalable supply-chains"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Clementine Bauch",
+    "username": "Samantha",
+    "email": "Nathan@yesenia.net",
+    "address": {
+      "street": "Douglas Extension",
+      "suite": "Suite 847",
+      "city": "McKenziehaven",
+      "zipcode": "59590-4157",
+      "geo": {
+        "lat": "-68.6102",
+        "lng": "-47.0653"
+      }
+    },
+    "phone": "1-463-123-4447",
+    "website": "ramiro.info",
+    "company": {
+      "name": "Romaguera-Jacobson",
+      "catchPhrase": "Face to face bifurcated interface",
+      "bs": "e-enable strategic applications"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Patricia Lebsack",
+    "username": "Karianne",
+    "email": "Julianne.OConner@kory.org",
+    "address": {
+      "street": "Hoeger Mall",
+      "suite": "Apt. 692",
+      "city": "South Elvis",
+      "zipcode": "53919-4257",
+      "geo": {
+        "lat": "29.4572",
+        "lng": "-164.2990"
+      }
+    },
+    "phone": "493-170-9623 x156",
+    "website": "kale.biz",
+    "company": {
+      "name": "Robel-Corkery",
+      "catchPhrase": "Multi-tiered zero tolerance productivity",
+      "bs": "transition cutting-edge web services"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Chelsey Dietrich",
+    "username": "Kamren",
+    "email": "Lucio_Hettinger@annie.ca",
+    "address": {
+      "street": "Skiles Walks",
+      "suite": "Suite 351",
+      "city": "Roscoeview",
+      "zipcode": "33263",
+      "geo": {
+        "lat": "-31.8129",
+        "lng": "62.5342"
+      }
+    },
+    "phone": "(254)954-1289",
+    "website": "demarco.info",
+    "company": {
+      "name": "Keebler LLC",
+      "catchPhrase": "User-centric fault-tolerant solution",
+      "bs": "revolutionize end-to-end systems"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Mrs. Dennis Schulist",
+    "username": "Leopoldo_Corkery",
+    "email": "Karley_Dach@jasper.info",
+    "address": {
+      "street": "Norberto Crossing",
+      "suite": "Apt. 950",
+      "city": "South Christy",
+      "zipcode": "23505-1337",
+      "geo": {
+        "lat": "-71.4197",
+        "lng": "71.7478"
+      }
+    },
+    "phone": "1-477-935-8478 x6430",
+    "website": "ola.org",
+    "company": {
+      "name": "Considine-Lockman",
+      "catchPhrase": "Synchronised bottom-line interface",
+      "bs": "e-enable innovative applications"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Kurtis Weissnat",
+    "username": "Elwyn.Skiles",
+    "email": "Telly.Hoeger@billy.biz",
+    "address": {
+      "street": "Rex Trail",
+      "suite": "Suite 280",
+      "city": "Howemouth",
+      "zipcode": "58804-1099",
+      "geo": {
+        "lat": "24.8918",
+        "lng": "21.8984"
+      }
+    },
+    "phone": "210.067.6132",
+    "website": "elvis.io",
+    "company": {
+      "name": "Johns Group",
+      "catchPhrase": "Configurable multimedia task-force",
+      "bs": "generate enterprise e-tailers"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Nicholas Runolfsdottir V",
+    "username": "Maxime_Nienow",
+    "email": "Sherwood@rosamond.me",
+    "address": {
+      "street": "Ellsworth Summit",
+      "suite": "Suite 729",
+      "city": "Aliyaview",
+      "zipcode": "45169",
+      "geo": {
+        "lat": "-14.3990",
+        "lng": "-120.7677"
+      }
+    },
+    "phone": "586.493.6943 x140",
+    "website": "jacynthe.com",
+    "company": {
+      "name": "Abernathy Group",
+      "catchPhrase": "Implemented secondary concept",
+      "bs": "e-enable extensible e-tailers"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Glenna Reichert",
+    "username": "Delphine",
+    "email": "Chaim_McDermott@dana.io",
+    "address": {
+      "street": "Dayna Park",
+      "suite": "Suite 449",
+      "city": "Bartholomebury",
+      "zipcode": "76495-3109",
+      "geo": {
+        "lat": "24.6463",
+        "lng": "-168.8889"
+      }
+    },
+    "phone": "(775)976-6794 x41206",
+    "website": "conrad.com",
+    "company": {
+      "name": "Yost and Sons",
+      "catchPhrase": "Switchable contextually-based project",
+      "bs": "aggregate real-time technologies"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Clementina DuBuque",
+    "username": "Moriah.Stanton",
+    "email": "Rey.Padberg@karina.biz",
+    "address": {
+      "street": "Kattie Turnpike",
+      "suite": "Suite 198",
+      "city": "Lebsackbury",
+      "zipcode": "31428-2261",
+      "geo": {
+        "lat": "-38.2386",
+        "lng": "57.2232"
+      }
+    },
+    "phone": "024-648-3804",
+    "website": "ambrose.net",
+    "company": {
+      "name": "Hoeger LLC",
+      "catchPhrase": "Centralized empowering task-force",
+      "bs": "target end-to-end models"
+    }
+  }
+]
+21:22:52.185 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+2 > GET https://jsonplaceholder.typicode.com/users/1
+2 > Host: jsonplaceholder.typicode.com
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+2 > Accept-Encoding: gzip,deflate
+
+
+21:22:52.251 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 461
+1 < 201
+1 < Date: Wed, 08 Sep 2021 03:22:52 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 216
+1 < Connection: keep-alive
+1 < x-powered-by: Express
+1 < x-ratelimit-limit: 1000
+1 < x-ratelimit-remaining: 999
+1 < x-ratelimit-reset: 1631071378
+1 < vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 < access-control-allow-credentials: true
+1 < cache-control: no-cache
+1 < pragma: no-cache
+1 < expires: -1
+1 < access-control-expose-headers: Location
+1 < location: http://jsonplaceholder.typicode.com/users/11
+1 < x-content-type-options: nosniff
+1 < etag: W/"d8-pYV7+YuMGP2hxHPU9ARrf97ifDA"
+1 < via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=ajU2dLUz1vwVnFqq0pDkC%2F33wJxdcP4kw966D%2BNNlauUyfYDGplndJBW1%2ForIXMaDJ%2Fmzrt3tWCq9oSdU6UlBrjhq28NK4aGg%2BVy%2B8tGxTTjLhPCPI4Ax92%2BgeBattCXACGqDOGfE4XIUzaiX3ky"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 68b50e0cb9670bf7-DFW
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+{
+  "name": "Test User",
+  "username": "testuser",
+  "email": "test@user.com",
+  "address": {
+    "street": "Has No Name",
+    "suite": "Apt. 123",
+    "city": "Electri",
+    "zipcode": "54321-6789"
+  },
+  "id": 11
+}
+21:22:52.254 [pool-1-thread-2] INFO  com.intuit.karate - [print] created id is:  11 
+21:22:52.322 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 137
+2 < 200
+2 < Date: Wed, 08 Sep 2021 03:22:52 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+2 < x-powered-by: Express
+2 < x-ratelimit-limit: 1000
+2 < x-ratelimit-remaining: 999
+2 < x-ratelimit-reset: 1629468784
+2 < vary: Origin, Accept-Encoding
+2 < access-control-allow-credentials: true
+2 < cache-control: max-age=43200
+2 < pragma: no-cache
+2 < expires: -1
+2 < x-content-type-options: nosniff
+2 < etag: W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"
+2 < via: 1.1 vegur
+2 < CF-Cache-Status: HIT
+2 < Age: 5823
+2 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=FzyQ6tqmgYMRDgu%2BEBOPwjCxzAxCMfcUCBKIjQLtoeO3EbWGRdPTo%2BREZCiJMKX5abyrg1QKG1IlMUqbVFEfMT%2Fp4Y1a1yBuA4ISDcXio2eNHMJrOly9B6qQ9PzrFhkxPBPpZyL32Uk20j3tRGCn"}],"group":"cf-nel","max_age":604800}
+2 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+2 < Server: cloudflare
+2 < CF-RAY: 68b50e0d996b6792-DFW
+2 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+{
+  "id": 1,
+  "name": "Leanne Graham",
+  "username": "Bret",
+  "email": "Sincere@april.biz",
+  "address": {
+    "street": "Kulas Light",
+    "suite": "Apt. 556",
+    "city": "Gwenborough",
+    "zipcode": "92998-3874",
+    "geo": {
+      "lat": "-37.3159",
+      "lng": "81.1496"
+    }
+  },
+  "phone": "1-770-736-8031 x56442",
+  "website": "hildegard.org",
+  "company": {
+    "name": "Romaguera-Crona",
+    "catchPhrase": "Multi-layered client-server neural-net",
+    "bs": "harness real-time e-markets"
+  }
+}
+21:22:52.773 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:examples/users/users.feature
+21:27:00.376 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:27:00.380 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1631071620380
+21:34:06.495 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:34:06.499 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1631072046499
+21:34:45.140 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:34:45.143 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1631072085143
+21:36:53.262 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:36:53.266 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1631072213266
+21:36:53.812 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+21:36:54.001 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://conduit.productionready.io/api/articles?limit=10&offset=0
+1 > Host: conduit.productionready.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:36:54.769 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 766
+1 < 200
+1 < Date: Wed, 08 Sep 2021 03:36:54 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < cache-control: max-age=0, private, must-revalidate
+1 < etag: W/"1f4bcd45fd4ec7a5e836cca3652ab6c2"
+1 < status: 200 OK
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-frame-options: SAMEORIGIN
+1 < x-powered-by: Phusion Passenger 4.0.60
+1 < x-request-id: 666451fc-6c73-4398-b27a-c2b2f1e72f11
+1 < x-runtime: 0.210209
+1 < x-xss-protection: 1; mode=block
+1 < CF-Cache-Status: DYNAMIC
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Zsxd2MEUd7T1HdEpDCDQv01ZsfM3FFyrDtR1g%2Bh%2FPGk6NRWx3gEAjVtaGXC2sOXsQfei74HJavvnQBJZVeTiV9asu6EV4kPxeMhCIo7ewmaQ5IZHO2UNR01SJXbJAdG8tllcLmjfKerxYjXFCw%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 68b5229c6c5e2fa9-DFW
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+{"articles":[{"title":"Grupo Primo","slug":"grupo-primo-qn7pqf","body":"Follow @thiago.nigro on Instagram","createdAt":"2021-09-08T03:21:11.872Z","updatedAt":"2021-09-08T03:21:11.872Z","tagList":[],"description":"Best investment and entrepreneur content","author":{"username":"Grupo Primo","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"这个一个blog","slug":"blog-p7o2ni","body":"angular 创建项目命令： ng new 项目名称\n\n创建组件： ng g 可查看所有创建的对象  ，ng g component  components/home  创建组件，后面跟的是组件的路径，最后生成的目录是app/componetns/home/xxxx各种文件","createdAt":"2021-09-08T02:53:55.704Z","updatedAt":"2021-09-08T02:53:55.704Z","tagList":[],"description":"blog","author":{"username":"哈哈哈哈是我","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Grupo Primo","slug":"grupo-primo-pw8m3p","body":"Follow @thiago.nigro on Instagram","createdAt":"2021-09-08T02:33:13.844Z","updatedAt":"2021-09-08T02:33:13.844Z","tagList":[],"description":"Best investment and entrepreneur content","author":{"username":"Grupo Primo","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Article created by Cypress test","slug":"article-created-by-cypress-test-qh9283","body":"This article is created with Cypress. See code here: https://github.com/helenanull/cypress-example","createdAt":"2021-09-08T02:05:13.303Z","updatedAt":"2021-09-08T02:05:13.303Z","tagList":["test-automation","simple","cypress"],"description":"https://github.com/helenanull/cypress-example","author":{"username":"cy838275463","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":1},{"title":"Article created by Cypress test","slug":"article-created-by-cypress-test-p9vapg","body":"This article is created with Cypress. See code here: https://github.com/helenanull/cypress-example","createdAt":"2021-09-08T02:05:12.133Z","updatedAt":"2021-09-08T02:05:12.133Z","tagList":["test-automation","simple","cypress"],"description":"https://github.com/helenanull/cypress-example","author":{"username":"cy588958608","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Article created by Cypress test","slug":"article-created-by-cypress-test-cgkiza","body":"This article is created with Cypress. See code here: https://github.com/helenanull/cypress-example","createdAt":"2021-09-08T02:05:05.829Z","updatedAt":"2021-09-08T02:05:05.829Z","tagList":["test-automation","simple","cypress"],"description":"https://github.com/helenanull/cypress-example","author":{"username":"cy249962452","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Article created by Cypress test","slug":"article-created-by-cypress-test-5qyi9f","body":"Test can edit an article. https://github.com/helenanull/cypress-example","createdAt":"2021-09-08T02:04:35.203Z","updatedAt":"2021-09-08T02:04:37.162Z","tagList":["test-automation","simple","cypress"],"description":"https://github.com/helenanull/cypress-example","author":{"username":"cy616451817","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":1},{"title":"Article created by Cypress test","slug":"article-created-by-cypress-test-yayi0h","body":"This article is created with Cypress. See code here: https://github.com/helenanull/cypress-example","createdAt":"2021-09-08T02:04:34.009Z","updatedAt":"2021-09-08T02:04:34.009Z","tagList":["test-automation","simple","cypress"],"description":"https://github.com/helenanull/cypress-example","author":{"username":"cy348235497","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"My post title","slug":"my-post-title-vs40fu","body":"Simple automation project https://github.com/helenanull/cypress-example","createdAt":"2021-09-08T02:04:33.048Z","updatedAt":"2021-09-08T02:04:33.048Z","tagList":["test-automation","cypress"],"description":"Cypress","author":{"username":"cy384306590","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"My post title","slug":"my-post-title-3ykepq","body":"Simple automation project https://github.com/helenanull/cypress-example","createdAt":"2021-09-08T02:04:29.730Z","updatedAt":"2021-09-08T02:04:29.730Z","tagList":[],"description":"Cypress","author":{"username":"cy182855601","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0}],"articlesCount":500}
+21:36:55.134 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:conduitApp/features/HomePage.feature
+21:50:18.405 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+21:50:18.409 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1631073018409
+21:50:18.414 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+21:50:19.260 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+21:50:19.260 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+21:50:19.458 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://conduit.productionready.io/api/articles?limit=10&offset=0
+1 > Host: conduit.productionready.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+21:50:19.459 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://conduit.productionready.io/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 63
+1 > Host: conduit.productionready.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"testdata02@gmail.com","password":"testdata"}}
+
+21:50:20.268 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 808
+1 < 200
+1 < Date: Wed, 08 Sep 2021 03:50:20 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < cache-control: max-age=0, private, must-revalidate
+1 < etag: W/"9726f12bb4babd0b3b1c7e3cb45e0d8b"
+1 < status: 200 OK
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-frame-options: SAMEORIGIN
+1 < x-powered-by: Phusion Passenger 4.0.60
+1 < x-request-id: 1f74aa26-4f69-4267-92aa-1033f40d4fed
+1 < x-runtime: 0.134618
+1 < x-xss-protection: 1; mode=block
+1 < CF-Cache-Status: DYNAMIC
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=ByCT3p%2FVgZPiXw3TT%2FYRIbMgLXBOMTqsRckORZ4M4LYFtdLlEpHH5qhqIi4JREAgL41kzG1jexukCDmsj4Pb5XJDSn5jFUdOVoJ%2BO0u8yKhEbyGIgaoia1TlR%2B%2BTwiu7nkh3BBw%2FZN0YOx%2FAcQ%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 68b536467ee166b9-DFW
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+{"user":{"id":221345,"email":"testdata02@gmail.com","createdAt":"2021-09-08T03:44:14.668Z","updatedAt":"2021-09-08T03:44:14.673Z","username":"testdata02","bio":null,"image":null,"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjIxMzQ1LCJ1c2VybmFtZSI6InRlc3RkYXRhMDIiLCJleHAiOjE2MzYyNTcwMjB9.6PyBPn1XyyZTyl6xSuyoRJWNhq7MsAFE4xgTrQRipxw"}}
+21:50:20.268 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 809
+1 < 200
+1 < Date: Wed, 08 Sep 2021 03:50:20 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < cache-control: max-age=0, private, must-revalidate
+1 < etag: W/"1f4bcd45fd4ec7a5e836cca3652ab6c2"
+1 < status: 200 OK
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-frame-options: SAMEORIGIN
+1 < x-powered-by: Phusion Passenger 4.0.60
+1 < x-request-id: 2b33b048-e810-4930-bac9-92eac907b0cd
+1 < x-runtime: 0.241414
+1 < x-xss-protection: 1; mode=block
+1 < CF-Cache-Status: DYNAMIC
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=t2euTOPhwiSEaOnGW%2B0yK%2B6hNViCnZedTprvQHDz3KFSji1nZDu3NtTvHIZA9Ij%2FX6g1HgEnJo0K%2FOAHkyilk4Eg9z24FA%2FYZoBuhG8nUDQpqVflJRFbg2J2eFXP5aWcmLMhb3vSVIc8%2BiV9hw%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 68b536467ce4287b-DFW
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+{"articles":[{"title":"Grupo Primo","slug":"grupo-primo-qn7pqf","body":"Follow @thiago.nigro on Instagram","createdAt":"2021-09-08T03:21:11.872Z","updatedAt":"2021-09-08T03:21:11.872Z","tagList":[],"description":"Best investment and entrepreneur content","author":{"username":"Grupo Primo","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"这个一个blog","slug":"blog-p7o2ni","body":"angular 创建项目命令： ng new 项目名称\n\n创建组件： ng g 可查看所有创建的对象  ，ng g component  components/home  创建组件，后面跟的是组件的路径，最后生成的目录是app/componetns/home/xxxx各种文件","createdAt":"2021-09-08T02:53:55.704Z","updatedAt":"2021-09-08T02:53:55.704Z","tagList":[],"description":"blog","author":{"username":"哈哈哈哈是我","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Grupo Primo","slug":"grupo-primo-pw8m3p","body":"Follow @thiago.nigro on Instagram","createdAt":"2021-09-08T02:33:13.844Z","updatedAt":"2021-09-08T02:33:13.844Z","tagList":[],"description":"Best investment and entrepreneur content","author":{"username":"Grupo Primo","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Article created by Cypress test","slug":"article-created-by-cypress-test-qh9283","body":"This article is created with Cypress. See code here: https://github.com/helenanull/cypress-example","createdAt":"2021-09-08T02:05:13.303Z","updatedAt":"2021-09-08T02:05:13.303Z","tagList":["test-automation","simple","cypress"],"description":"https://github.com/helenanull/cypress-example","author":{"username":"cy838275463","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":1},{"title":"Article created by Cypress test","slug":"article-created-by-cypress-test-p9vapg","body":"This article is created with Cypress. See code here: https://github.com/helenanull/cypress-example","createdAt":"2021-09-08T02:05:12.133Z","updatedAt":"2021-09-08T02:05:12.133Z","tagList":["test-automation","simple","cypress"],"description":"https://github.com/helenanull/cypress-example","author":{"username":"cy588958608","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Article created by Cypress test","slug":"article-created-by-cypress-test-cgkiza","body":"This article is created with Cypress. See code here: https://github.com/helenanull/cypress-example","createdAt":"2021-09-08T02:05:05.829Z","updatedAt":"2021-09-08T02:05:05.829Z","tagList":["test-automation","simple","cypress"],"description":"https://github.com/helenanull/cypress-example","author":{"username":"cy249962452","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Article created by Cypress test","slug":"article-created-by-cypress-test-5qyi9f","body":"Test can edit an article. https://github.com/helenanull/cypress-example","createdAt":"2021-09-08T02:04:35.203Z","updatedAt":"2021-09-08T02:04:37.162Z","tagList":["test-automation","simple","cypress"],"description":"https://github.com/helenanull/cypress-example","author":{"username":"cy616451817","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":1},{"title":"Article created by Cypress test","slug":"article-created-by-cypress-test-yayi0h","body":"This article is created with Cypress. See code here: https://github.com/helenanull/cypress-example","createdAt":"2021-09-08T02:04:34.009Z","updatedAt":"2021-09-08T02:04:34.009Z","tagList":["test-automation","simple","cypress"],"description":"https://github.com/helenanull/cypress-example","author":{"username":"cy348235497","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"My post title","slug":"my-post-title-vs40fu","body":"Simple automation project https://github.com/helenanull/cypress-example","createdAt":"2021-09-08T02:04:33.048Z","updatedAt":"2021-09-08T02:04:33.048Z","tagList":["test-automation","cypress"],"description":"Cypress","author":{"username":"cy384306590","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"My post title","slug":"my-post-title-3ykepq","body":"Simple automation project https://github.com/helenanull/cypress-example","createdAt":"2021-09-08T02:04:29.730Z","updatedAt":"2021-09-08T02:04:29.730Z","tagList":[],"description":"Cypress","author":{"username":"cy182855601","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0}],"articlesCount":500}
+21:50:20.655 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 2 (1 remaining) classpath:conduitApp/features/Article.feature
+21:50:20.692 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) classpath:conduitApp/features/HomePage.feature
+22:04:30.958 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+22:04:30.963 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1631073870962
+22:04:30.969 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+22:04:31.857 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+22:04:31.857 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+22:04:32.105 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://conduit.productionready.io/api/articles?limit=10&offset=0
+1 > Host: conduit.productionready.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+22:04:32.105 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://conduit.productionready.io/api/users/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 63
+1 > Host: conduit.productionready.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 > Accept-Encoding: gzip,deflate
+{"user":{"email":"testdata02@gmail.com","password":"testdata"}}
+
+22:04:32.863 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 756
+1 < 200
+1 < Date: Wed, 08 Sep 2021 04:04:32 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Connection: keep-alive
+1 < cache-control: max-age=0, private, must-revalidate
+1 < etag: W/"d6b817a8c92964bfb4842f3646e228c8"
+1 < status: 200 OK
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-frame-options: SAMEORIGIN
+1 < x-powered-by: Phusion Passenger 4.0.60
+1 < x-request-id: c8d4b20f-2b8a-430d-89ba-1a123bbbf5c7
+1 < x-runtime: 0.106064
+1 < x-xss-protection: 1; mode=block
+1 < CF-Cache-Status: DYNAMIC
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=UGvwmbO%2BE4RLWH5xLsOMz2J0ivkEB4o1Zv03mtXvQqWczMimc91b6xMKN0lGDSFbucxBZd%2BXW8Jm8dXKy2L5cLm6WdX660aTrTTdrFcpBkGbKWYudsYQSkZxv5ww8aEFdT85ffSWnJcE2mleEg%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 68b54b17bed90bbb-DFW
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+{"user":{"id":221345,"email":"testdata02@gmail.com","createdAt":"2021-09-08T03:44:14.668Z","updatedAt":"2021-09-08T03:44:14.673Z","username":"testdata02","bio":null,"image":null,"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjIxMzQ1LCJ1c2VybmFtZSI6InRlc3RkYXRhMDIiLCJleHAiOjE2MzYyNTc4NzJ9.syD_peYxe7LIkVOueDitMNrYewf_ae6RvW7b3Szft5E"}}
+22:04:32.892 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+2 > POST https://conduit.productionready.io/api/articles
+2 > Authorization: Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjIxMzQ1LCJ1c2VybmFtZSI6InRlc3RkYXRhMDIiLCJleHAiOjE2MzYyNTc4NzJ9.syD_peYxe7LIkVOueDitMNrYewf_ae6RvW7b3Szft5E
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 131
+2 > Host: conduit.productionready.io
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+2 > Accept-Encoding: gzip,deflate
+{"article":{"tagList":[],"title":"Article creation","description":"test creation is here to stay","body":"creatre aricle content"}}
+
+22:04:34.592 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 1699
+2 < 200
+2 < Date: Wed, 08 Sep 2021 04:04:33 GMT
+2 < Content-Type: application/json; charset=utf-8
+2 < Transfer-Encoding: chunked
+2 < Connection: keep-alive
+2 < cache-control: max-age=0, private, must-revalidate
+2 < etag: W/"c0fbb92bc0ba8e2ff13aa7b0ad0477e5"
+2 < status: 200 OK
+2 < vary: Origin
+2 < x-content-type-options: nosniff
+2 < x-frame-options: SAMEORIGIN
+2 < x-powered-by: Phusion Passenger 4.0.60
+2 < x-request-id: a2a9db3b-413c-4d1f-8d2f-d8b4c91be552
+2 < x-runtime: 0.680949
+2 < x-xss-protection: 1; mode=block
+2 < CF-Cache-Status: DYNAMIC
+2 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=ggqQdcL5kLKtbCbpS2ln3%2BhxvK3vJ6ImCgPoZOpjhJU260oSoZ4%2BZeiKDvRNlDBNP4JWKks0v4ITImSCgo%2BDzzMIBtDYLwrcQqr59v%2FcKx27Q78amOx%2BC%2BG624yXmovvwhva6uOzYdZ9tJkavQ%3D%3D"}],"group":"cf-nel","max_age":604800}
+2 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+2 < Server: cloudflare
+2 < CF-RAY: 68b54b1aca4e6787-DFW
+2 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+{"article":{"title":"Article creation","slug":"article-creation-y8m91v","body":"creatre aricle content","createdAt":"2021-09-08T04:04:33.767Z","updatedAt":"2021-09-08T04:04:33.767Z","tagList":[],"description":"test creation is here to stay","author":{"username":"testdata02","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0}}
+22:04:34.592 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 2487
+1 < 200
+1 < Date: Wed, 08 Sep 2021 04:04:34 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < cache-control: max-age=0, private, must-revalidate
+1 < etag: W/"83fec1aca2192190db67c65b1babeb01"
+1 < status: 200 OK
+1 < vary: Origin
+1 < x-content-type-options: nosniff
+1 < x-frame-options: SAMEORIGIN
+1 < x-powered-by: Phusion Passenger 4.0.60
+1 < x-request-id: f037d2fc-63a2-450d-b83b-3d6141e549f3
+1 < x-runtime: 1.271106
+1 < x-xss-protection: 1; mode=block
+1 < CF-Cache-Status: DYNAMIC
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=9PBsm1jNjeWkgUiNeZD%2FyH2sG%2Fl0KjaQnfJbK8kjlvRaGmvlhRIug7e%2FyLkHkRKF968PZBrvIvameMwcpz7FtwIV9EbJbj8PrwFIqm9%2FMXJcTJUhgnCyGvn%2FLdY0TF%2FEupDcYpR9Gb367NjC%2Bg%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 68b54b17bac6ec72-DFW
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443"; ma=86400
+{"articles":[{"title":"Article created by Cypress test","slug":"article-created-by-cypress-test-y20arb","body":"Test can edit an article. https://github.com/helenanull/cypress-example","createdAt":"2021-09-08T04:04:20.324Z","updatedAt":"2021-09-08T04:04:22.228Z","tagList":["test-automation","simple","cypress"],"description":"https://github.com/helenanull/cypress-example","author":{"username":"cy154396285","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":1},{"title":"Article created by Cypress test","slug":"article-created-by-cypress-test-fkbxfs","body":"This article is created with Cypress. See code here: https://github.com/helenanull/cypress-example","createdAt":"2021-09-08T04:04:19.163Z","updatedAt":"2021-09-08T04:04:19.163Z","tagList":["test-automation","simple","cypress"],"description":"https://github.com/helenanull/cypress-example","author":{"username":"cy860726955","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"My post title","slug":"my-post-title-8yn5dy","body":"Simple automation project https://github.com/helenanull/cypress-example","createdAt":"2021-09-08T04:04:18.221Z","updatedAt":"2021-09-08T04:04:18.221Z","tagList":["test-automation","cypress"],"description":"Cypress","author":{"username":"cy065500107","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"My post title","slug":"my-post-title-tav1n0","body":"Simple automation project https://github.com/helenanull/cypress-example","createdAt":"2021-09-08T04:04:14.944Z","updatedAt":"2021-09-08T04:04:14.944Z","tagList":[],"description":"Cypress","author":{"username":"cy785510221","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Article creation","slug":"article-creation-nges8f","body":"creatre aricle content ","createdAt":"2021-09-08T03:59:43.774Z","updatedAt":"2021-09-08T03:59:43.774Z","tagList":[],"description":"test creation is here to stay","author":{"username":"testdata02","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"test01","slug":"test01-yf91j5","body":"test aricle ","createdAt":"2021-09-08T03:59:05.580Z","updatedAt":"2021-09-08T03:59:05.580Z","tagList":[],"description":"test article on","author":{"username":"testdata02","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Grupo Primo","slug":"grupo-primo-qn7pqf","body":"Follow @thiago.nigro on Instagram","createdAt":"2021-09-08T03:21:11.872Z","updatedAt":"2021-09-08T03:21:11.872Z","tagList":[],"description":"Best investment and entrepreneur content","author":{"username":"Grupo Primo","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"这个一个blog","slug":"blog-p7o2ni","body":"angular 创建项目命令： ng new 项目名称\n\n创建组件： ng g 可查看所有创建的对象  ，ng g component  components/home  创建组件，后面跟的是组件的路径，最后生成的目录是app/componetns/home/xxxx各种文件","createdAt":"2021-09-08T02:53:55.704Z","updatedAt":"2021-09-08T02:53:55.704Z","tagList":[],"description":"blog","author":{"username":"哈哈哈哈是我","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Grupo Primo","slug":"grupo-primo-pw8m3p","body":"Follow @thiago.nigro on Instagram","createdAt":"2021-09-08T02:33:13.844Z","updatedAt":"2021-09-08T02:33:13.844Z","tagList":[],"description":"Best investment and entrepreneur content","author":{"username":"Grupo Primo","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":0},{"title":"Article created by Cypress test","slug":"article-created-by-cypress-test-qh9283","body":"This article is created with Cypress. See code here: https://github.com/helenanull/cypress-example","createdAt":"2021-09-08T02:05:13.303Z","updatedAt":"2021-09-08T02:05:13.303Z","tagList":["test-automation","simple","cypress"],"description":"https://github.com/helenanull/cypress-example","author":{"username":"cy838275463","bio":null,"image":"https://static.productionready.io/images/smiley-cyrus.jpg","following":false},"favorited":false,"favoritesCount":1}],"articlesCount":500}
+22:04:35.002 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 2 (1 remaining) classpath:conduitApp/features/Article.feature
+22:04:35.041 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) classpath:conduitApp/features/HomePage.feature
