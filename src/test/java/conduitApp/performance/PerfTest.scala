@@ -16,11 +16,12 @@ class PerfTest extends Simulation {
   )
 
 
-  val createArticle = scenario("create and delete article").exec(karateFeature("classpath:conduitApp/performance/Article.feature"))
+  val createArticle = scenario("create and delete article").exec(karateFeature("classpath:conduitApp/performance/Department.feature"))
 
   setUp(
     createArticle.inject(
     atOnceUsers(200)
+
 
   ).protocols(protocol)
   )
